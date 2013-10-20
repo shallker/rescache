@@ -16,6 +16,14 @@ function onError(err) {
 }
 
 promisy(function (next) {
+  test('rescache.set', function (done) {
+    test.notThrow(function () {
+      rescache.set('cache.folder', __dirname + '/cache');
+      done();
+      next();
+    });
+  });
+}).then(function (next) {
   test('rescache.cache', function (done) {
     rescache.cache(url, function (succes) {
       test.eq(succes, true);
