@@ -1,0 +1,32 @@
+{
+  "name": "rescache",
+  "description": "Resource caching",
+  "version": "0.0.1",
+  "author": "Shallker Wang <imshallker@gmail.com>",
+  "main": "index.js",
+  "keywords": [
+    "rescache"
+  ],
+  "homepage": "https://github.com/shallker/rescache",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shallker/rescache.git"  
+  },
+  "bugs": {
+    "url": "https://github.com/shallker/rescache/issues"
+  },
+  "dependencies": {
+    "node-http": "*",
+    "encoding": "*",
+    "promisy": "*",
+    "eventy": "*",
+    "reges": "*",
+    "mime": "*",
+    "MD5": "*"
+  },
+  "devDependencies": {
+    "simple-test": "*"
+  },
+  "scripts": {},
+  "license": "MIT"
+}
