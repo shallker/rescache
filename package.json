@@ -1,7 +1,7 @@
 {
   "name": "rescache",
   "description": "Resource caching",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Shallker Wang <imshallker@gmail.com>",
   "main": "index.js",
   "keywords": [
