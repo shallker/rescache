@@ -41,10 +41,10 @@ promisy(function (next) {
   });
 }).then(function (next) {
   test('rescache.read', function (done) {
-    rescache.read(url, function (data) {
-      console.log('data', data)
-      test.ok(data.mime)
-      test.ok(data.buffer)
+    rescache.read(url, function (cache) {
+      console.log('cache', cache)
+      test.ok(cache.mime)
+      test.ok(cache.buffer)
       done();
       next();
     }, onError);

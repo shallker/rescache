@@ -16,10 +16,10 @@ var rescache = require('rescache');
 rescache.set('cache.folder', __dirname + '/cache');
 rescache.cache('https://github.com/favicon.ico');
 
-rescache.read('https://github.com/favicon.ico', function (data) {
-  console.log(data.mime);
-  console.log(data.charset);
-  console.log(data.buffer.toString('base64'));
+rescache.read('https://github.com/favicon.ico', function (cache) {
+  console.log(cache.mime);
+  console.log(cache.charset);
+  console.log(cache.buffer.toString('base64'));
 });
 
 rescache.remove('https://github.com/favicon.ico');
